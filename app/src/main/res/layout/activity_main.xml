@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.yubarajkalathoki.mpay.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NTC Prepaid"
+        android:id="@+id/ntcPrepaidButton"
+        android:layout_marginTop="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="goToNtcPrepaidActivity"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recharge Cards"
+        android:id="@+id/rechargeCardsButton"
+        android:layout_alignBottom="@+id/ntcPrepaidButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="goToRechargeCardActivity"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NCELL Topup"
+        android:id="@+id/ncellTopupButton"
+        android:layout_below="@+id/ntcPrepaidButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="68dp"
+        android:onClick="goToNCELLTopupActivity"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NTC Postpaid"
+        android:id="@+id/ntcPostPaidButton"
+        android:layout_alignTop="@+id/ncellTopupButton"
+        android:layout_alignLeft="@+id/rechargeCardsButton"
+        android:layout_alignStart="@+id/rechargeCardsButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="goToNtcPostpaidActivity"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADSL Topup"
+        android:id="@+id/adslTopupButton"
+        android:layout_below="@+id/ncellTopupButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="59dp"
+        android:layout_alignRight="@+id/ncellTopupButton"
+        android:layout_alignEnd="@+id/ncellTopupButton"
+        android:onClick="goToAdslTopupActivity"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DishHome Topup"
+        android:id="@+id/dishHomeTopupButton"
+        android:layout_alignTop="@+id/adslTopupButton"
+        android:layout_alignLeft="@+id/ntcPostPaidButton"
+        android:layout_alignStart="@+id/ntcPostPaidButton"
+        android:onClick="goToDishHomeTopupActivity"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIM/TV"
+        android:id="@+id/simtvButton"
+        android:layout_below="@+id/dishHomeTopupButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"
+        android:layout_alignRight="@+id/ntcPrepaidButton"
+        android:layout_alignEnd="@+id/ntcPrepaidButton"
+        android:onClick="goToSimTvActivity"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ESEWA Transfer"
+        android:id="@+id/esewaTransferButton"
+        android:layout_alignTop="@+id/simtvButton"
+        android:layout_alignLeft="@+id/dishHomeTopupButton"
+        android:layout_alignStart="@+id/dishHomeTopupButton"
+        android:onClick="goToEsewaTransferActivity"/>
+</RelativeLayout>
